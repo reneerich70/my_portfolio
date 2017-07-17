@@ -1,0 +1,108 @@
+html {
+  /*border: 10px solid blue;*/
+  font-family: sans-serif;
+  color: #d8dbde;
+}
+body {
+  /*border: 10px solid red;*/
+}
+/*layout*/
+#idx-atf {
+  height: 100vh;
+  display: flex;
+  /*flex-direction: row;*/
+  /*flex-wrap: nowrap;*/
+  /*flex-flow: ro nowrap;*/
+  justify-content: center;
+  align-items: center;
+  /*background*/
+  background-color: #5b5b5b;
+  background-image: url(grand-canyon.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  /*background-origin: border-box;*/
+  background-attachment: fixed;
+  }
+  #idx-atf > div {
+    height: 26vh;
+  }
+  .idx-center-space {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.idx-center-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.idx-center {
+  display: flex;
+  flex-direction: column;
+  /*flex-wrap: nowrap;*/
+  /*flex-flow: nowrap*/
+  justify-content: center;/*primary axis-column*/
+  align-items: center;/*cross-axis-row*/
+
+}
+
+h1 {
+  font-size: 3rem;
+  color:#d8dbde;
+}
+h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-family: "Tangerine", cursive;
+  color: #d8dbde;
+}
+h3 {
+  font-size: 1.4rem;
+  color: #d8dbde;
+
+}
+button {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: inherit;
+  background-color: transparent;
+  border: solid 1px rgb(202, 250, 234);
+  border-radius: 5px;
+  padding: 4px;
+
+}
+/*pseudoclasses*/
+a:link{
+  color: green;
+}
+a:visited {
+  color: yellow;
+}
+a:hover {
+  color: orange;
+}
+
+a:active {
+  color:blue;
+}
+.footer {
+  display: flex;
+
+  flex-direction: column;
+  /*flex-wrap: nowrap;*/
+  /*flex-flow: nowrap*/
+  justify-content: center;/*primary axis-column*/
+  align-items: center;/*cross-axis-row*/
+  background-color: black;
+  background-attachment: fixed;
+
+}
+.f-nav a{
+  color: inherit;
+  display: inline;
+}
