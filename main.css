@@ -1,12 +1,29 @@
 html {
   /*border: 10px solid blue;*/
-  font-family: sans-serif;
+  font-family: "Alegreya",serif;
   color: #d8dbde;
 }
 body {
   /*border: 10px solid red;*/
 }
 /*layout*/
+header{
+  position: fixed;
+  top:0;
+  left:0;
+  background-color: rgb(0,0,0,.6);
+  width: 100%;
+  height: 2.8rem;
+
+}
+header div header nav {
+height: 200px;
+width: 200px;
+height: 80%;
+margin: 0;
+background-color: red;
+}
+
 #idx-atf {
   height: 100vh;
   display: flex;
@@ -23,62 +40,83 @@ body {
   background-size: cover;
   /*background-origin: border-box;*/
   background-attachment: fixed;
+
   }
+
   #idx-atf > div {
-    height: 26vh;
+    height: 90vh;
   }
   .idx-center-space {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+  }
+  span{
+    color: darkgrey;
+    font-size: 4rem;
+    font-family: "Dancing Script", cursive;
   }
 
-.idx-center-center{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.idx-center {
-  display: flex;
-  flex-direction: column;
-  /*flex-wrap: nowrap;*/
-  /*flex-flow: nowrap*/
-  justify-content: center;/*primary axis-column*/
-  align-items: center;/*cross-axis-row*/
-
-}
-
-h1 {
-  font-size: 3rem;
+.intro  {
+  font-size: 4rem;
   color:#d8dbde;
+  text-align: center;
+  padding: .7rem;
 }
-h2 {
-  font-size: 2.4rem;
-  font-weight: 700;
-  font-family: "Tangerine", cursive;
-  color: #d8dbde;
+h2{
+  font-size: 2rem;
+  color:#d8dbde;
+  text-align: center;
+  padding: 1.4rem;
+  margin-bottom: 1.8rem;
 }
-h3 {
-  font-size: 1.4rem;
-  color: #d8dbde;
 
-}
 button {
+  color: white;
   font-size: 1.4rem;
   font-weight: 700;
-  color: inherit;
-  background-color: transparent;
-  border: solid 1px rgb(202, 250, 234);
-  border-radius: 5px;
-  padding: 4px;
+  border: 1px solid white;
+  border-radius: 3px;
+  margin: 1.7rem;
+  padding: 1.7rem 2rem;
+}
+i {
+  border: solid white;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 5px;
+  margin: 10px;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.f-nav a{
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 50px;
+  display: inline-block;
+  text-decoration: none;
+}
+.abt-sec{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  color: darkgrey;
+}
+
+.abt-img{
+
+  border-radius: 100px;
+  padding: 20px;
 
 }
 /*pseudoclasses*/
 a:link{
-  color: green;
+  color: white;
+  text-decoration: none;
 }
 a:visited {
   color: yellow;
@@ -102,7 +140,32 @@ a:active {
   background-attachment: fixed;
 
 }
-.f-nav a{
+.f-nav  a{
   color: inherit;
-  display: inline;
+}
+
+.f-nav ul {
+  list-style-type: none;
+}
+.f-nav li {
+  display: flex;
+  display: inline-flex;
+  text-decoration: none;
+  align-items: center;
+
+  /*hover:background-color: #;*/
+}
+/*******media queries******/
+@media only screen and (min-width: 800px) {
+
+
+#idx-atf {
+  background-image: url(grand-canyon.jpg);
+}
+#idx-atf > div{
+  height: 18vh;
+}
+.intro {
+  font-size: 3rem;
+}
 }
