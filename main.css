@@ -1,27 +1,41 @@
 html {
   /*border: 10px solid blue;*/
-  font-family: "Alegreya",serif;
-  color: white;
+  font-family: "Alegreya", serif;
+  color: #fcf4e0;
 }
-body {
-  /*border: 10px solid red;*/
+:root{
+  font-size:16px;
+}
 
+
+body {
+  background-color: #333a49;
 }
+  #container{
+    display: flex;
+    flex-direction: column;
+  }
+
 p {
   font-size: 1.4rem;
 }
-/*layout*/
+
+
+/****layout****/
+
 .hdr-nav {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 2.8rem;
-background-color: rgba(0, 0, 0, .4);
-order: -1;
-text-decoration:none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2.8rem;
+  background-color: transparent;
+  order: -1;
+  text-decoration: none;
+  font-size: 1.4rem;
 }
-.hdr-nav li{
+
+.hdr-nav li {
   display: flex;
   display: inline-flex;
   padding: .7rem;
@@ -39,173 +53,164 @@ text-decoration:none;
   background-color: #5b5b5b;
   background-image: url(grand-canyon.jpg);
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
   background-size: cover;
   /*background-origin: border-box;*/
   background-attachment: fixed;
+}
 
-  }
+#idx-atf>div {
+  height: 90vh;
+}
 
-  #idx-atf > div {
-    height: 90vh;
-  }
-  .idx-center-space {
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 160px;
-
-
-  }
-  span{
-    color: darkgrey;
-    font-size: 4rem;
-    font-family: "Dancing Script", cursive;
-  }
-
-.intro  {
+.idx-center-space {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 160px;
+}
+span {
+  color: #5b698b;
   font-size: 4rem;
-  color:#d8dbde;
+  font-weight: 600;
+}
+
+.intro {
+  font-size: 4rem;
   text-align: center;
   padding: .7rem;
+  margin-left: 50px;
 }
-h2{
+
+h2 {
   font-size: 2rem;
-  color:#d8dbde;
   text-align: center;
   padding: 1.4rem;
   margin-bottom: 1.8rem;
+  margin-left: 90px;
 }
 
-button {
-  color: white;
+button:hover{
+  background-color: #fcf4e0;
+}
+
+#cont-btn {
+  display: flex;
+  flex-direction: column;
   font-size: 1.4rem;
   font-weight: 700;
-  border: 1px solid white;
-  border-radius: 3px;
-  margin: 1.7rem;
-  padding: 1.7rem 2rem;
+  border: 1px solid #fcf4e0;
+  border-radius: 4px;
+  padding: 1.2rem;
+  margin-top: -0.625rem;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
 }
-i {
-  border: solid white;
-  border-width: 0 1px 1px 0;
-  display: inline-block;
-  padding: 5px;
-  margin: 10px;
+/*****About Section****/
+
+.abt-img{
+  border: 1px solid darkgrey;
+  padding: 10px;
 }
-.down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-}
-.work-section{
+#abt-sec{
   display: flex;
-  flex: 1;
-  padding-bottom:  10px;
+  flex-direction: column;
+  background-color: #333a49;
+  justify-content: center;
+  align-items: center;
+  padding: 1.7rem;
+}
+/*to be placed in separate about page
 
-}
-img{
-  display: inline-block;
-  border: 1px solid #666;
-  background-color: #FFF;
-  padding: 4px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
-
-}
-.work-section nth-of-type {
-  margin-left: 20px;
-}
-/*****add card to the work section*****/
-.work-section-one{
-background-color: blue;/*test colors*/
-border: 1px solid black;
-
-}
-.work-section-two{
-background-color: yellow;/*test colors*/
-border: 1px solid black;
-
-}
-.work-section-three{
-background-color: red;/*test color*/
-border: 1px solid black;
-}
-.wk-dply{
-  background-color: white;
-  color: red;
+blockquote{
+  border: 1px dashed;
+  padding: 5px;
+  font-size: 1.4rem;
   text-align: center;
+  flex: 1 1 100px;
 }
-.f-nav a{
+*/
+/*pseudoclasses*/
+
+a:link {
+  color: #ffcc99;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #5b698b;
+}
+
+a:hover {
+  color: #ffcc99;
+}
+
+a:active {
+  color: #fcf4e0;
+}
+
+/****Footer****/
+.footer {
+  display: flex;
+  list-style: none;
+  flex: 1 1 auto;
+
+
+
+
+
+}
+
+/*footer section
+.f-nav a {
   padding: 10px;
   border: 1px solid white;
   border-radius: 50px;
   display: inline-block;
   text-decoration: none;
 }
-.abt-sec{
-  display: flex;
-  flex-direction:column;
-  align-items: center;
-  color: darkgrey;
-}
-
-.abt-img{
-
-  border-radius: 100px;
-  padding: 20px;
-
-}
-/*pseudoclasses*/
-a:link{
-  color: white;
-  text-decoration: none;
-}
-a:visited {
-  color: yellow;
-}
-a:hover {
-  color: orange;
-}
-
-a:active {
-  color:blue;
-}
 .footer {
   display: flex;
-
   flex-direction: column;
-  /*flex-wrap: nowrap;*/
-  /*flex-flow: nowrap*/
-  justify-content: center;/*primary axis-column*/
-  align-items: center;/*cross-axis-row*/
-  background-color: black;
+  flex-wrap: nowrap;
+  flex-flow: nowrap;
+  justify-content: center;
+  primary axis-column
+  align-items: center;
+  cross-axis-row
+  background-color: rgba(0, 0, 0, .4);
   background-attachment: fixed;
   margin-top: 1.2rem;
-
 }
-.f ul{
+
+.f ul {
   list-style: none;
   flex: 1;
 }
 
-.f-nav li{
+.f-nav li {
   display: flex;
   display: inline-flex;
   text-decoration: none;
   align-items: center;
+  /*hover:background-color: #;
+}
+****/
 
-  /*hover:background-color: #;*/
-}
+
 /*******media queries******/
-@media (min-width: 768px){
-#idx-atf {
-  background-image: url(grand-canyon.jpg);
-}
-#idx-atf > div{
-  height: 18vh;
-}
-.intro {
-  font-size: 3rem;
-}
+
+@media (min-width: 768px) {
+  #idx-atf {
+    background-image: url(grand-canyon.jpg);
+  }
+  #idx-atf>div {
+    height: 18vh;
+  }
+  .intro {
+    font-size: 3rem;
+  }
 }
