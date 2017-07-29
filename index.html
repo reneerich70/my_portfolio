@@ -9,7 +9,7 @@
   <!--[if IE 8 ]>
 <meta http-equiv="X-UA-Compatible" content="IE=8" />
 <![endif]-->
-<!--[if gt IE 8]>
+  <!--[if gt IE 8]>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 <![endif]-->
   <title>D.Crocker Richards | Developer</title>
@@ -18,32 +18,102 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
   <div id="container">
-  <header class="hdr-nav">
-    <nav>
-      <ul>
-        <li id="home"><a href="#home">home</a></li>
-        <li><a href="#abt-sec">about</a></li>
-        <li><a href="#wk-sec">projects</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section id="idx-atf">
-    <div class="idx-center-space">
-      <h1 class="intro">Hi, my name is <span id="nm-ln">Dondra</span></h1>
-      <h2>I love to code and create amazing websites and applications!</h2>
-      <button id ="cont-btn"><a href="#contact">Let's build something!</a></button>
-      <i class="arrow down"></i>
-    </div>
-  </section>
-  <!--about section-->
-  <section id="abt-sec">
-  </section>
+    <header class="hdr-nav">
+      <nav>
+        <ul>
+          <li id="home"><a href="#home">home</a></li>
+          <li><a href="#abt-sec">about</a></li>
+          <li><a href="#wk-sec">projects</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="idx-atf">
+      <div class="idx-center-space">
+        <h1 class="intro">Hi, my name is <span id="nm-ln">Dondra</span></h1>
+        <!--add away for the name to flip inside out or upside down--animate then as it scrolls up the page make it disappear-->
+        <h2>I love to code and create amazing websites and applications!</h2>
+        <button id="cont-btn"><a href="#contact">Let's build something!</a></button>
+      </div>
+    </section>
+    <!--projects section-->
+    <section id="projects">
+      <h1 class="wk-sec">Projects</h1>
+      <div class="wk-cards">
+        <div class="top">
+          <img class="wk-img">
+        </div>
+        <div class="bottom">
+          <span class="card-label">Typography</span>
+          <!--examples-business card, holstee manifesto using MAya Angelou quotes, create a poster using different type fonts-->
+        </div>
+      </div>
+      <div class="wk-cards">
+        <div class="top">
+          <img class="wk-img-two"><!--make this a clickable link, and make the label a clickable link-->
+        </div>
+        <div class="bottom">
+          <span class="card-label">Web Design</span>
+          <!--examples to include landing page for Raymond's site-->
+        </div>
+      </div>
+      <div class="wk-cards">
+        <div class="top">
+          <img class="wk-img-three">
+        </div>
+        <div class="bottom">
+          <span class="card-label">Wordpress</span>
+          <!--examples-travel site-->
+        </div>
+      </div>
+      <div class="wk-cards">
+        <div class="top">
+          <img class="wk-img-four">
+        </div>
+        <div class="bottom">
+          <span class="card-label">Applications</span>
+          <!--examples-recipe app, puppy app-->
+        </div>
+      </div>
+      <div class="wk-cards">
+        <div class="top">
+          <img class="wk-img-five">
+        </div>
+        <div class="bottom">
+          <span class="card-label">Web Development Tools</span>
+          <!--examples-use typography to showcase list of skills such as javascript, jquery, bootstrap,photoshop--maybe like a map or a level progress bar--or a scale icon with skills I'm great at weighing one side down and skills I'm improving on or learning-->
+        </div>
+      </div>
+      <div class="wk-cards">
+        <div class="top">
+          <img class="wk-img-six">
+        </div>
+        <div class="bottom">
+          <span class="card-label">Current Projects</span>
+          <!--examples-Raymond's landing page with a design comp, and project path-full visual design work steps, travel site-->
+        </div>
+      </div>
+
+    </section>
+    <section id="contact">
+    <h2>Contact Me!</h2>
+    <p>Let me know what you're working on and we'll see how I can help.</p>
+    <fieldset>
+      <label>
+
+
+      </label>
+
+    </fieldset>
+
+    </section>
 
 
 
-<!--add blockquote on about page
+
+    <!--add blockquote on about page
       <blockquote>
         “What you're supposed to do when you don't like a thing is change it. If you can't change it, change the way you think about it. Don't complain.”
 ― Maya Angelou, Wouldn't Take Nothing for My Journey Now
@@ -51,26 +121,23 @@
       </blockquote>
     -->
 
- <!--footer section-->
+    <!--footer section-->
 
     <footer>
-      <div class="f-nav">
-        <nav>
-          <ul>
-            <li><a href="#home">home</a></li>
-            <li><a href="#abt-sec">about</a></li>
-            <li><a href="#wk-sec">work</a></li>
-            <li><a href="#cont-sec">contact me</a></li>
-            <li><a href="blog">my blog</a></li>
-          </ul>
-        </nav>
+      <div class="ftr-nav">
+        <ul class="ftr-li">
+          <li><a href="#home">home</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#blog">blog</a></li>
+          <li><a href="#about"></a></li>
+          <li><a href="#contact">Contact Me!</a></li>
+        </ul>
       </div>
-
-      <p>coded by D. Richards &copy; 2017</p>
+      <p class="ftr-p">coded by D. Richards &copy; 2017</p>
 
     </footer>
 
-</div>
+  </div>
   <script src="main.js"></script>
 </body>
 
